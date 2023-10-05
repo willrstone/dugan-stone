@@ -1,0 +1,464 @@
+@import url(//db.onlinewebfonts.com/c/c6249c54520c2337ca8b0fe39ea5037f?family=NeueAachenPro-Medium);
+@import url(//db.onlinewebfonts.com/c/c881662d2392dba08d858e9778f9cc03?family=NeueAachenW01-Thin);
+@import url(//db.onlinewebfonts.com/c/b7deba640c9157f990e9c89b221bd6e6?family=NeueAachenW01-Book);
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.4;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ba0c2f;
+  font-size: larger;
+}
+
+.navbar {
+  background-color: #ba0c2f;
+  color: #f5f5f5;
+  font-family: NeueAachenPro-Medium;
+  height: 100px;
+  border-color: #f2f2f2;
+  border-width: 3px;
+  padding: 0 50px;
+  box-shadow: 0px 2px 10px #000000;
+  border-bottom: solid 1px #f5f5f5;
+  position: relative;
+}
+
+.navbar h1 {
+  border: solid 3px;
+  border-radius: 3px;
+  padding: 0.5% 1%;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #f5f5f5;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #f5f5f5 solid;
+}
+
+.navbar .grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-list {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #f5f5f5;
+}
+
+.mobile-menu {
+  font-family: NeueAachenPro-Medium;
+  top: 0px;
+  left: -100%;
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: #f5f5f5;
+  color: #ba0c2f;
+  padding: 0;
+  line-height: 5rem;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  margin: auto 0;
+  /* padding: 20% 0; */
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.showcase {
+  background-color: #f5f5f5;
+  color: #ba0c2f;
+  display: grid;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase img {
+  max-height: 350px;
+}
+
+.about h1 {
+  font-family: NeueAachenPro-Medium;
+}
+
+.about {
+  font-family: Roboto;
+  padding: 0% 15%;
+  font-size: 1.6rem;
+}
+
+.home-img {
+  display: block;
+  width: 75%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trailers {
+  background-color: #f5f5f5;
+  color: #ba0c2f;
+  display: grid;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.trailers .container {
+  background-color: #f5f5f5;
+  color: #ba0c2f;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+}
+
+.trailers-paragraph h1 {
+  font-family: NeueAachenPro-Medium;
+}
+
+.trailers-paragraph {
+  font-family: Roboto;
+  padding: 0% 15%;
+  font-size: 1.6rem;
+}
+
+.products {
+  background-color: #f5f5f5;
+  color: #ba0c2f;
+  display: grid;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.products .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-paragraph h1 {
+  font-family: NeueAachenPro-Medium;
+  text-align: left;
+}
+
+.products-paragraph {
+  font-family: Roboto;
+  padding: 0% 15%;
+  font-size: 1.6rem;
+}
+
+.footer {
+  font-family: NeueAachenPro-Medium;
+  min-height: 200px;
+  background-color: #d4d4d4;
+  color: #ba0c2f;
+}
+
+.footer .grid {
+  display: grid;
+  padding: 20px 25%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact,
+.hours {
+  text-align: center;
+}
+
+.hours h4 {
+  font-size: 19.2px;
+}
+
+.footer h2 {
+  margin-bottom: 5px;
+}
+
+/* Image Carousel Styling */
+
+.gallery {
+  background-color: #ba0c2f;
+  height: auto;
+}
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  padding: 5%;
+  text-align: center;
+  height: auto;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out 2s;
+  display: none;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+.slide.current {
+  opacity: 1;
+  width: 100%;
+  display: block;
+}
+
+.slide .content {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.95);
+  left: -1800px;
+  opacity: 0;
+  width: fit-content;
+  padding: 2px 6px;
+  border-radius: 1rem;
+  top: 5px;
+  margin: auto;
+  font-family: NeueAachenW01-Book;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(1800px);
+  transition: all 0.3s ease-in-out 0.3s;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 55%;
+  left: 15%;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 55%;
+  right: 15%;
+}
+
+.buttons button {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 1rem;
+  outline: none;
+}
+
+/* Background Images */
+
+.slide:first-child {
+  background: url("/bent-neck-before.jpg.JPEG") no-repeat center/cover;
+}
+.slide:nth-child(2) {
+  background: url("/bent-neck-after.jpg.JPEG") no-repeat center/cover;
+}
+.slide:nth-child(3) {
+  background: url("/hard-top-before.jpg.JPEG") no-repeat center/cover;
+}
+.slide:nth-child(4) {
+  background: url("/hard-top-after.jpg.JPEG") no-repeat center/cover;
+}
+.slide:nth-child(5) {
+  background: url("/flooring-before.jpg.JPEG") no-repeat top/cover;
+}
+.slide:nth-child(6) {
+  background: url("/flooring-after.jpg.JPEG") no-repeat center/cover;
+}
+.slide:nth-child(7) {
+  background: url("/new-16foot-1.jpg.JPEG") no-repeat center/cover;
+}
+.slide:nth-child(8) {
+  background: url("/new-16foot-2.jpg.JPEG") no-repeat center/cover;
+}
+.slide:nth-child(9) {
+  background: url("/new-flatbed.jpg.JPEG") no-repeat center/cover;
+}
+.slide:nth-child(10) {
+  background: url("/new-flatbed-2.jpg.JPEG") no-repeat center/cover;
+}
+.slide:nth-child(11) {
+  background: url("/new-20-foot.jpg.JPEG") no-repeat center/cover;
+}
+.slide:nth-child(12) {
+  background: url("/new-gooseneck-1.png.PNG") no-repeat center/cover;
+}
+.slide:nth-child(13) {
+  background: url("/new-gooseneck-2.png.PNG") no-repeat center/cover;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .navbar h1 {
+    border: none;
+    font-size: 30px;
+  }
+  .nav-list ul {
+    flex-direction: column;
+    display: none;
+    width: 100vw;
+    background-color: #ffffff;
+    padding: 25%;
+  }
+  .hamburger {
+    display: block;
+    right: 20px;
+    top: 33px;
+    z-index: 2;
+  }
+  .hamburger.active {
+    position: fixed;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    background-color: #ba0c2f;
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    background-color: #ba0c2f;
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .mobile-menu.active {
+    left: 0;
+    display: block;
+  }
+  .showcase,
+  .trailers,
+  .products {
+    min-height: 200px;
+    padding: 0%;
+    padding-top: 5px;
+  }
+  .showcase .container {
+    grid-template-columns: 1fr;
+    width: 100vw;
+  }
+  .trailers .container {
+    grid-template-columns: 1fr;
+    width: 100vw;
+  }
+  .products .container {
+    grid-template-columns: 1fr;
+    width: 100vw;
+  }
+  .trailers-paragraph {
+    order: -1;
+    font-size: 1.4rem;
+  }
+  .about {
+    font-size: 1.4rem;
+  }
+  .img-container img {
+    display: none;
+  }
+  .about-img {
+    min-height: 400px;
+    width: 100%;
+    margin: auto;
+  }
+  .products-paragraph {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  .products-img {
+    min-height: 400px;
+    width: 100%;
+    margin: auto;
+  }
+  .slider {
+    max-width: 100%;
+    padding: 3%;
+  }
+  .footer .grid {
+    padding: 5%;
+    margin: auto;
+  }
+}
+
+.polaroid {
+  position: relative;
+  padding-top: 56.25%;
+  width: 80%;
+}
+
+.test {
+  width: 100%;
+  height: auto;
+}
